@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Caculator App</title>
+        <Link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <!--Number display-->
+                <div class="display">
+                    <input type="text" id="display" value="0" readonly>
+                </div>
+        </div>
+        <!--Button Grid-->
+
+            <div class="button">
+                <!--First Row-->
+                <button class="btn clear" onclick="clearDisplay()">AC</button>
+                <button class="btn operator" onclick="deletelast()">DEL</button>
+                <button class="btn operator" onclick="appednToDisplay('/')">(/)</button>
+                <button class="btn operator" onclick="appednToDisplay('*')">x</button>
+
+                <!--Second Row-->
+                <button class="btn number" onclick="appednToDisplay('7')">7</button>
+                <button class="btn number" onclick="appednToDisplay('8')">8</button>
+                <button class="btn number" onclick="appednToDisplay('9')">9</button>
+                <button class="btn operator" onclick="appednToDisplay('-')">-</button>
+
+                <!--Third Row-->
+                <button class="btn number" onclick="appednToDisplay('4')">4</button>
+                <button class="btn number" onclick="appednToDisplay('5')">5</button>
+                <button class="btn number" onclick="appednToDisplay('6')">6</button>
+                <button class="btn operator" onclick="appednToDisplay('+')">+</button>
+
+                <!--Fourth Row-->
+                <button class="btn number" onclick="appednToDisplay('1')">1</button>
+                <button class="btn number" onclick="appednToDisplay('2')">2</button>
+                <button class="btn number" onclick="appednToDisplay('3')">3</button>
+                <button class="btn operator" onclick="calculate()" rowspan="2">=</button>
+
+                <!--Fifth Row-->
+                <button class="btn number" onclick="appednToDisplay('0')">0</button>
+                <button class="btn number" onclick="appednToDisplay('.')">.</button>
+            </div>    
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
